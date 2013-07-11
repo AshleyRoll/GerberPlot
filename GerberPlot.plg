@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GerberPlot - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Pete\LOCALS~1\Temp\RSP1A0.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/GerberPlot.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Projects\GerberPlotter\GerberPlotDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Pete\LOCALS~1\Temp\RSP1A0.tmp" 
+Creating temporary file "C:\DOCUME~1\Pete\LOCALS~1\Temp\RSP1A1.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/GerberPlot.pdb" /machine:I386 /out:"Release/GerberPlot.exe" 
+.\Release\AboutBox.obj
+.\Release\command.obj
+.\Release\gerber.obj
+.\Release\GerberPlot.obj
+.\Release\GerberPlotDlg.obj
+.\Release\hpgl.obj
+.\Release\SerialPort.obj
+.\Release\StdAfx.obj
+.\Release\GerberPlot.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Pete\LOCALS~1\Temp\RSP1A1.tmp"
+<h3>Output Window</h3>
+Compiling...
+GerberPlotDlg.cpp
+C:\Projects\GerberPlotter\GerberPlotDlg.cpp(365) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/GerberPlot.bsc"  .\Release\StdAfx.sbr .\Release\AboutBox.sbr .\Release\command.sbr .\Release\gerber.sbr .\Release\GerberPlot.sbr .\Release\GerberPlotDlg.sbr .\Release\hpgl.sbr .\Release\SerialPort.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+GerberPlot.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

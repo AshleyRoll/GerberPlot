@@ -1,0 +1,38 @@
+CAM Products 2000   Aperture List
+Serial Number:  0000-00-00000
+
+
+Format:  2.3
+Zero Suppression:  Leading
+Type:  Absolute
+UNITS: English (In.)
+     
+DCODE:		TYPE:		   X  :  Y	BLOCK/CUSTOM:
+--------------------------------------------------------
+10		Round		0.0120:0.0120	
+11		Round		0.0100:0.0100	
+12		Round		0.0200:0.0200	
+13		Rect		0.0600:0.0500	
+14		Rect		0.0600:0.0600	
+15		Rect		0.0500:0.0600	
+16		Oblong		0.0800:0.0280	
+17		Rect		0.1250:0.0600	
+18		Rect		0.0360:0.0360	
+19		Rect		0.0500:0.0360	
+20		Rect		0.2500:0.0600	
+21		Oblong		0.2500:0.0600	
+22		Rect		0.0360:0.0500	
+23		Rect		0.0600:0.1250	
+24		Oblong		0.0240:0.0800	
+25		Rect		0.0710:0.0140	
+26		Oblong		0.0710:0.0140	
+27		Oblong		0.0140:0.0710	
+28		Oblong		0.0800:0.0240	
+29		Rect		0.7000:0.4400	
+30		Round		0.0620:0.0620	
+31		Round		0.0600:0.0600	
+32		Round		0.1400:0.1400	
+33		Rect		0.0590:0.0590	
+34		Round		0.0590:0.0590	
+35		Custom		0.0000:0.0000	D34
+36		Round		0.0500:0.0500	

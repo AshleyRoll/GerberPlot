@@ -1,0 +1,259 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GERBERPLOT_DIALOG DIALOGEX 0, 0, 300, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gerber to HPGL Converter [beta 6 - November 2005]"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Gerber Input File",IDC_STATIC,7,7,69,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,80,7,182,13,ES_AUTOHSCROLL
+    RTEXT           "HPGL Output File",IDC_STATIC,7,25,69,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT2,80,25,182,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_CONVERT,80,130,49,13
+    RTEXT           "Pen Width (mm)",IDC_STATIC,7,44,69,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PENSIZE,80,44,40,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Pen Speed (cm/s)",IDC_STATIC,142,44,58,13,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_PENSPEED,203,44,39,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BROWSEIN,272,7,19,13
+    PUSHBUTTON      "...",IDC_BROWSEOUT,272,25,19,13
+    PUSHBUTTON      "About",IDC_ABOUT,242,130,49,13
+    CONTROL         "Output Gerber commands as comments (to help debug)",
+                    IDC_OUTPUT_GERBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    80,63,189,10
+    GROUPBOX        "After Convert, print Output File direct to Plotter",
+                    IDC_STATIC,7,155,284,39
+    PUSHBUTTON      "Send To Plotter",IDC_SEND,130,172,65,13
+    RTEXT           "Plotter Port",IDC_STATIC,14,172,43,13,SS_CENTERIMAGE
+    CONTROL         "Send in Chunks",IDC_SENDCHUNKS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,202,174,74,10
+    COMBOBOX        IDC_PORTNAME,64,172,58,48,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_UPPERCASE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Check1",IDC_FORCE_ORIGIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,79,10,10
+    LTEXT           "Force Gerber Origin to 0,0",
+                    IDC_Force_Zero_Gerber_Origin,93,80,177,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_XOFFSET,80,97,40,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "X Offset (PLU's)",IDC_X_OFFSET,24,99,52,9
+    RTEXT           "Y Offset (PLU's)",IDC_Y_OFFSET,137,98,58,13,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_YOFFSET,201,98,39,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(1mm = 40 PLU's, 1 inch = 1016 PLU's)",
+                    IDC_PUS_EXPLAINED,80,116,124,8
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 247, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Gerber to HPGL Converter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,190,130,50,14
+    EDITTEXT        IDC_DETAILS,7,7,233,120,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GerberPlot MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GerberPlot\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GerberPlot.EXE\0"
+            VALUE "ProductName", "GerberPlot Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GERBERPLOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        VERTGUIDE, 76
+        VERTGUIDE, 80
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+        HORZGUIDE, 130
+        HORZGUIDE, 152
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GERBERPLOT_DIALOG DLGINIT
+BEGIN
+    IDC_PORTNAME, 0x403, 6, 0
+0x504c, 0x3154, 0x003a, 
+    IDC_PORTNAME, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_PORTNAME, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GerberPlot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GerberPlot.ico"
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\GerberPlot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
